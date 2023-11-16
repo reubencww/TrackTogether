@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.OfficeDelete"
+    android:orientation="vertical"
+    android:background="@color/theme_grey">
+
+    <EditText
+        android:id="@+id/officeNametextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="@string/delete_name"
+        android:textColor="@color/theme_blue"
+        android:textColorHint="@color/darker_light_grey" />
+
+    <Button
+        android:id="@+id/deleteLocationButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/delete_location"
+        android:gravity="center"/>
+
+</LinearLayout>

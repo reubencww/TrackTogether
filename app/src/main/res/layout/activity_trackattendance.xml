@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:id="@+id/trackAttendanceActivity"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textViewEmployeeListTitle"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:background="@color/theme_orange"
+            android:gravity="center"
+            android:text="@string/attendance_history"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/track_heading_card"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:theme="@style/Theme.TrackTogether"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewEmployeeListTitle"
+            app:strokeColor="@color/theme_blue"
+            app:strokeWidth="1dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    style="@style/Theme.TrackTogether"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/profile_image"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/ic_baseline_account_circle_setting_orange" />
+
+                <TextView
+                    android:id="@+id/username_textView"
+                    android:layout_width="0dp"
+                    android:layout_height="21dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="12dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/staffId_textView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="@+id/username_textView"
+                    app:layout_constraintStart_toStartOf="@+id/username_textView"
+                    app:layout_constraintTop_toBottomOf="@+id/username_textView" />
+
+                <TextView
+                    android:id="@+id/department_textView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="@+id/username_textView"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/username_textView"
+                    app:layout_constraintTop_toBottomOf="@+id/staffId_textView" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/from_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/from"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/track_heading_card"
+            app:layout_constraintTop_toBottomOf="@+id/track_heading_card" />
+
+        <TextView
+            android:id="@+id/to_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/to"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/to_editText"
+            app:layout_constraintTop_toBottomOf="@+id/track_heading_card" />
+
+        <EditText
+            android:id="@+id/from_editText"
+            android:layout_width="120dp"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:autofillHints="DD/MM/YYYY"
+            android:hint="@string/dd_mm_yyyy"
+            android:background="@drawable/edit_text_border"
+            android:textColorHint="@color/darker_light_grey"
+            android:inputType="date"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/track_heading_card"
+            app:layout_constraintTop_toBottomOf="@+id/from_textView"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/from_date_imageView"
+            style="@style/Theme.TrackTogether"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:contentDescription="@string/date_image"
+            app:layout_constraintBottom_toBottomOf="@+id/from_editText"
+            app:layout_constraintStart_toEndOf="@+id/from_editText"
+            app:layout_constraintTop_toTopOf="@+id/from_editText"
+            app:srcCompat="@drawable/ic_baseline_date_range_orange_24" />
+
+        <EditText
+            android:id="@+id/to_editText"
+            android:layout_width="120dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="1dp"
+            android:autofillHints="DD/MM/YYYY"
+            android:background="@drawable/edit_text_border"
+            android:ems="10"
+            android:hint="@string/dd_mm_yyyy"
+            android:inputType="date"
+            android:textColor="@color/black"
+            android:textColorHint="@color/darker_light_grey"
+            app:layout_constraintEnd_toStartOf="@+id/to_date_imageView"
+            app:layout_constraintTop_toBottomOf="@+id/to_textView"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/to_date_imageView"
+            style="@style/Theme.TrackTogether"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:contentDescription="@string/date_image"
+            app:layout_constraintBottom_toBottomOf="@+id/to_editText"
+            app:layout_constraintEnd_toEndOf="@+id/track_heading_card"
+            app:layout_constraintTop_toTopOf="@+id/to_editText"
+            app:srcCompat="@drawable/ic_baseline_date_range_orange_24" />
+
+        <Button
+            android:id="@+id/track_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@color/theme_orange"
+            android:text="@string/track"
+            android:textColor="#5D4037"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/from_editText" />
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="@+id/to_date_imageView"
+            app:layout_constraintStart_toStartOf="@+id/from_editText"
+            app:layout_constraintTop_toBottomOf="@+id/track_button">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabBackground="@color/theme_orange"
+                app:tabGravity="fill"
+                app:tabInlineLabel="true"
+                app:tabMode="fixed"
+                app:tabTextColor="@color/black" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="0dp"
+            android:layout_height="300dp"
+            android:layout_below="@id/appBarLayout"
+            android:background="@drawable/rectangle_border_with_shadow"
+            app:layout_constraintEnd_toEndOf="@+id/appBarLayout"
+            app:layout_constraintStart_toStartOf="@+id/appBarLayout"
+            app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

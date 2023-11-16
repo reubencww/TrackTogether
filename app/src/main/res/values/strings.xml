@@ -1,0 +1,170 @@
+<resources>
+    <string name="app_name">Track Together</string>
+    <string name="username_login_hint">Username</string>
+    <string name="password_login_hint">Password</string>
+    <string name="login_button">Log In</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="start_capture">Start Capture</string>
+    <string name="stop_capture">Stop Capture</string>
+    <string name="first_name">FIRST NAME</string>
+    <string name="last_name">LAST NAME</string>
+    <string name="confirm_password">CONFIRM PASSWORD</string>
+    <string name="password">PASSWORD</string>
+    <string name="not_you"><u>Not you?</u></string>
+    <string name="office_location">OFFICE LOCATION</string>
+    <string name="date_of_birth">DATE OF BIRTH</string>
+    <string name="gender">GENDER</string>
+    <string name="email">EMAIL</string>
+    <string name="enter_your_email">Enter employee\'s email</string>
+    <string name="re_enter_password">Re-enter Password</string>
+    <string name="dd_mm_yyyy">DD/MM/YYYY</string>
+    <string name="register">Register</string>
+    <string name="_65">+65</string>
+    <string name="phone_number">PHONE NUMBER</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="designation">DESIGNATION</string>
+    <string name="add_employee">+</string>
+    <!-- Attendance page strings -->
+    <string name="welcome_text">WELCOME!</string>
+    <string name="name">Name: </string>
+    <string name="staff_id">Staff id: </string>
+    <string name="profile_image">profile_image</string>
+    <string name="sales">Sales: </string>
+    <string name="remote_check_in">Check In Remotely</string>
+    <string name="nfc">NFC Check In</string>
+    <string name="check_out">Check out</string>
+    <string name="done_for_the_day">You are done for the day. \n Have a good rest ! 🛏</string>
+    <string name="check_out_success">Successfully checked out. \n Have a good rest ! 🛏</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="department">DEPARTMENT</string>
+    <string name="staff_id_">Staff id</string>
+    <string name="name_em">Name</string>
+    <string name="register_new_employee">Register New Employee</string>
+    <string name="history_filter">History Filter</string>
+    <!--- Approval Pages Stuff-->
+    <string name="reject">Reject</string>
+    <string name="approve">Approve</string>
+    <!--- Setting stuff -->
+    <string name="enable_bio">Enable Biometrics Login</string>
+    <string name="settings">Settings</string>
+    <string name="add_photo">Add Photo</string>
+    <!--- Google Map API stuff -->
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve">AIzaSyB9W64KPx5ntvIIaSK9b0W81MhTVlfmQQg</string>
+    <!-- Permissions -->
+    <string name="permission_rationale_location">Access to the location service is required.</string>
+    <string name="location_permission_denied">Please try again and grant access to use the location.\nIf the permission has been permanently denied, it can be enabled from the System Settings &gt; Apps &gt; \'Track Together\'.</string>
+    <string name="permission_required_toast">Location permission is required.</string>
+
+    <!-- Login page -->
+    <string name="email_hint">Email</string>
+    <!-- Main page -->
+    <string name="view_attendance">View Attendance</string>
+    <string name="attendance_history">Attendance History</string>
+    <string name="attendance_description">Track your past attendance!</string>
+    <string name="setting_description">Upload photo and enable biometric here!</string>
+    <string name="approve_checkin">Approve Check In</string>
+    <string name="approve_description">Accept employee submitted photos</string>
+    <string name="edit_office">Edit Office Locations</string>
+    <string name="edit_nfc_tags">Edit NFC tags</string>
+    <string name="track_attendance">Track Attendance</string>
+    <string name="track_description">View Employee\'s attendance</string>
+
+    <!-- History spinner -->
+    <string-array name="history_array">
+        <item>Today</item>
+        <item>1 Week</item>
+        <item>1 Month</item>
+        <item>3 Months</item>
+    </string-array>
+    <string-array name="department_array">
+        <item>All</item>
+        <item>Human Resource Management</item>
+        <item>Production</item>
+        <item>Research and Development</item>
+        <item>Purchasing</item>
+        <item>Marketing</item>
+        <item>Accounting and Finance</item>
+    </string-array>
+
+    <string name="uploading_image">Uploading image</string>
+    <string name="position_face_in_center">Position face in center</string>
+    <string name="approval_image">Approval Image</string>
+    <string name="logout">LOGOUT</string>
+
+    <!-- Office CRUD -->
+    <string name="add_offices">Add Offices</string>
+    <string name="create_office">CREATE</string>
+    <string name="read_office">VIEW</string>
+
+    <!-- Approve remote checkin -->
+    <string name="approve_remote_checkin">Approve Remote CheckIn</string>
+
+    <!-- activity main -->
+    <string name="main_message">Here\'s what\'s happening today</string>
+
+    <!-- activity nfc -->
+    <string name="scan_ready">Ready to Scan</string>
+    <string name="hold_phone_near">Hold your phone near \n the card to scan</string>
+
+    <!-- activity profile -->
+    <string name="profile">Profile</string>
+    <string name="save">Save</string>
+    <string name="add_image">Add Image</string>
+
+    <!-- activity recog -->
+    <string name="success_checkin">Successfully Checked In</string>
+
+    <!-- Attendance tacking -->
+    <string name="from">FROM</string>
+    <string name="to">TO</string>
+    <string name="date">Date</string>
+    <string name="track">Track</string>
+    <string name="attendance">Attendance</string>
+    <string name="image">Image</string>
+
+    <!-- employee list -->
+    <string name="delete">Delete</string>
+
+    <!-- employee main framgent -->
+    <string name="update_photo">Update profile and photo!</string>
+    <string name="remote_checkin">Remote Check In</string>
+    <string name="remote_description">Click Here to check in remotely using face ID!</string>
+    <string name="nfc_title">Office Check In</string>
+    <string name="nfc_description">Check in at office!</string>
+    <string name="done_title">Done</string>
+    <string name="done_title_2">Great Job!</string>
+
+    <!-- admin main framgent -->
+    <string name="edit_offic_title">Offices</string>
+    <string name="edit_office_desc">Click here add/ change offices</string>
+    <string name="register_emp_title">Account Creation</string>
+    <string name="register_emp_title_2">Create New Employees</string>
+    <string name="register_emp_desc">Click here to onboard new employee accounts!</string>
+
+    <!-- geo query -->
+    <string name="update">UPDATE</string>
+    <string name="delete_geo">DELETE</string>
+    <string name="geo_name_exp">Enter Office Name i.e. SIT-NYP</string>
+    <string name="postal">Enter Postal Code</string>
+    <string name="add_location">ADD LOCATION</string>
+    <string name="delete_name">Enter office name you want to delete</string>
+    <string name="delete_location">DELETE LOCATION</string>
+    <string name="new_office_name">Enter office name you want to update</string>
+    <string name="new_postal_code">Enter new postal code for the office</string>
+    <string name="update_location">UPDATE LOCATION</string>
+    <string name="edit">Edit</string>
+    <string name="textview">TextView</string>
+    <string name="face_path">faces/user</string>
+    <string name="check_in_image">checkinimage.jpg</string>
+    <string name="image_in_review">In-review</string>
+    <string name="image_waiting">Waiting</string>
+    <string name="image_rejected">Rejected</string>
+    <string name="image_waiting_message">Please add image for approval to check-in remotely!</string>
+    <string name="image_approved">Approved</string>
+    <string name="image_not_found_message">Image not found on device. Please add a new image in profile.</string>
+    <string name="image_rejected_message">Your image has been rejected. Please add a new image in profile.</string>
+    <string name="date_image">date_string</string>
+
+
+</resources>

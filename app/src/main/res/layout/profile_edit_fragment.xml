@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".authviews.ProfileEdit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/lastnameeditTextLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="@string/last_name"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textColorHint="@color/darker_light_grey"
+        app:layout_constraintStart_toEndOf="@+id/viewprofileimageView"
+        app:layout_constraintTop_toBottomOf="@+id/labellastnametextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:startIconDrawable="@drawable/ic_baseline_write_name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/lastnameeditText"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <ImageView
+        android:id="@+id/viewprofileimageView"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleProfiletextView"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/titleProfiletextView"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@color/theme_orange"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="@string/profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/labelfirstnametextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/first_name"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/labellastnametextView"
+        app:layout_constraintTop_toBottomOf="@+id/titleProfiletextView" />
+
+    <TextView
+        android:id="@+id/labellastnametextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/last_name"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/lastnameeditTextLayout"
+        app:layout_constraintTop_toBottomOf="@+id/firstnameeditTextLayout" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/firstnameeditTextLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="@string/first_name"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textColorHint="@color/darker_light_grey"
+        app:layout_constraintStart_toEndOf="@+id/viewprofileimageView"
+        app:layout_constraintTop_toBottomOf="@+id/labelfirstnametextView"
+        app:startIconDrawable="@drawable/ic_baseline_write_name"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/firstnameeditText"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/phoneeditTextLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="@string/_65"
+        android:textColorHint="@color/darker_light_grey"
+        app:layout_constraintEnd_toEndOf="@+id/lastnameeditTextLayout"
+        app:layout_constraintStart_toStartOf="@+id/lastnameeditTextLayout"
+        app:layout_constraintTop_toBottomOf="@+id/labelphonetextView"
+        app:startIconDrawable="@drawable/ic_baseline_phone">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/phoneeditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Spinner
+        android:id="@+id/genderSpinner"
+        android:layout_width="127dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/theme_orange"
+        android:contentDescription="@string/gender"
+        android:minHeight="48dp"
+        android:popupBackground="@color/darker_light_grey"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/labeldesignationtextView"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="visible" />
+
+    <Spinner
+        android:id="@+id/departmentSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/theme_orange"
+        android:contentDescription="@string/department"
+        android:minHeight="48dp"
+        android:popupBackground="@color/darker_light_grey"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.096"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labeldepartmenttextView"
+        tools:visibility="visible" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dobeditTextLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="@string/dd_mm_yyyy"
+        android:textColorHint="@color/darker_light_grey"
+        app:layout_constraintEnd_toEndOf="@+id/phoneeditTextLayout"
+        app:layout_constraintStart_toStartOf="@+id/phoneeditTextLayout"
+        app:layout_constraintTop_toBottomOf="@+id/labeldobtextView"
+        app:startIconDrawable="@drawable/ic_baseline_date_range_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dobeditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <TextView
+        android:id="@+id/labelphonetextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/phone_number"
+        android:textColor="@color/black"
+        android:textColorHint="@color/darker_light_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/lastnameeditTextLayout"
+        app:layout_constraintTop_toBottomOf="@+id/lastnameeditTextLayout" />
+
+    <TextView
+        android:id="@+id/labelGendertextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="88dp"
+        android:text="@string/gender"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/genderSpinner"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/labeldobtextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/date_of_birth"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/phoneeditTextLayout"
+        app:layout_constraintTop_toBottomOf="@+id/phoneeditTextLayout" />
+
+    <TextView
+        android:id="@+id/labeldesignationtextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/designation"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/designationeditTextLayout"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="@+id/labelGendertextView" />
+
+    <TextView
+        android:id="@+id/labeldepartmenttextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/department"
+        android:textColor="@color/black"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="@+id/labelGendertextView"
+        app:layout_constraintTop_toBottomOf="@+id/designationeditTextLayout" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/designationeditTextLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:hint="@string/designation"
+        android:textColorHint="@color/darker_light_grey"
+        app:layout_constraintEnd_toEndOf="@+id/dobeditTextLayout"
+        app:layout_constraintStart_toStartOf="@+id/labeldesignationtextView"
+        app:layout_constraintTop_toBottomOf="@+id/dobeditTextLayout"
+        app:startIconDrawable="@drawable/ic_baseline_badge_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/designationeditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <Button
+        android:id="@+id/addimageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/add_image"
+        android:textColor="#5D4037"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewprofileimageView"
+        android:background="@drawable/theme_button"/>
+
+    <Button
+        android:id="@+id/savebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:text="@string/save"
+        android:background="@drawable/theme_button"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/departmentSpinner" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

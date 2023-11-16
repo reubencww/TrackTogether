@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    >
+
+    <TextView
+        android:id="@+id/loginBox"
+        android:layout_width="350dp"
+        android:layout_height="600dp"
+        android:background="@drawable/checkin_box"
+        android:lines="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.496" />
+
+    <ImageView
+        android:id="@+id/nfcImageView"
+        android:layout_width="110dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tagtextView"
+        app:srcCompat="@drawable/nfc_scan_icon" />
+
+    <TextView
+        android:id="@+id/tagtextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/scan_ready"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.253" />
+
+    <TextView
+        android:id="@+id/instructTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/hold_phone_near"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/loginBox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nfcImageView"
+        app:layout_constraintVertical_bias="0.345" />
+
+    <TextView
+        android:id="@+id/nfcLoading"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/checkin_box"
+        android:lines="2"
+        android:backgroundTint="@color/darker_light_grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.496"
+        android:visibility="invisible"/>
+
+    <ProgressBar
+        android:id="@+id/nfcProgressBar"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="@+id/nfcLoading"
+        app:layout_constraintStart_toStartOf="@+id/nfcLoading"
+        app:layout_constraintEnd_toEndOf="@+id/nfcLoading"
+        app:layout_constraintTop_toTopOf="@+id/nfcLoading"
+        android:visibility="invisible"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

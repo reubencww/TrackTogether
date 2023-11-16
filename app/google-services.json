@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "950744027933",
+    "firebase_url": "https://track-together-f6fb0-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "track-together-f6fb0",
+    "storage_bucket": "track-together-f6fb0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:950744027933:android:71e999d8237184790cc7f4",
+        "android_client_info": {
+          "package_name": "com.example.tracktogether"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "950744027933-qjo42srn9s2dfnlksdrtd5up06ir7880.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAf68hBq0fN7W80x9Q7UXVR-WB2AyvgmT0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "950744027933-qjo42srn9s2dfnlksdrtd5up06ir7880.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

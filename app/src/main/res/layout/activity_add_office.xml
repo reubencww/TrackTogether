@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/settingTextView"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@color/theme_orange"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:text="@string/add_offices"
+        android:textColor="@color/theme_blue"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/settingTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/settingTextView" />
+
+    <Button
+        android:id="@+id/createOfficeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:text="@string/create_office"
+        android:layout_marginRight="8dp"
+        android:textColor="@color/black"
+        android:background="@drawable/office_button"
+        app:layout_constraintBottom_toBottomOf="@+id/settingTextView"
+        app:layout_constraintEnd_toStartOf="@+id/readOfficeButton"
+        app:layout_constraintTop_toTopOf="@+id/settingTextView" />
+
+    <Button
+        android:id="@+id/readOfficeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/read_office"
+        android:background="@drawable/office_button"
+        android:textColor="@color/black"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/settingTextView"
+        app:layout_constraintEnd_toEndOf="@+id/settingTextView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/editofficeFragmentView"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createOfficeButton"
+        tools:layout_editor_absoluteX="16dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

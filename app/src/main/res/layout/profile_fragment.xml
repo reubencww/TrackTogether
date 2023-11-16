@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+    tools:context=".authviews.ProfileActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    android:id="@+id/viewprofileFragement">
+
+    <ImageView
+        android:id="@+id/viewprofileimageView"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/lnameviewtextView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleProfiletextView"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/titleProfiletextView"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@color/theme_orange"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="@string/profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/labelfirstnametextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/first_name"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/viewprofileimageView"
+        app:layout_constraintTop_toBottomOf="@+id/titleProfiletextView" />
+
+    <TextView
+        android:id="@+id/labellastnametextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/last_name"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/viewprofileimageView"
+        app:layout_constraintTop_toBottomOf="@+id/fnameviewtextView" />
+
+    <TextView
+        android:id="@+id/labelphonetextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/phone_number"
+        android:textColor="@color/black"
+        android:textColorHint="@color/darker_light_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/labellastnametextView"
+        app:layout_constraintTop_toBottomOf="@+id/lnameviewtextView" />
+
+    <TextView
+        android:id="@+id/labelGendertextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/gender"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/genderviewtextView"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/labeldobtextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/date_of_birth"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/phoneviewtextView"
+        app:layout_constraintTop_toBottomOf="@+id/phoneviewtextView" />
+
+    <TextView
+        android:id="@+id/labeldesignationtextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/designation"
+        android:textColor="@color/black"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="@+id/labelGendertextView"
+        app:layout_constraintTop_toBottomOf="@+id/genderviewtextView" />
+
+    <TextView
+        android:id="@+id/labeldepartmenttextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/department"
+        android:textColor="@color/black"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="@+id/labelGendertextView"
+        app:layout_constraintTop_toBottomOf="@+id/designationviewtextView" />
+
+    <Button
+        android:id="@+id/savebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/edit"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/departmentviewtextView"
+        android:background="@drawable/theme_button"/>
+
+    <TextView
+        android:id="@+id/fnameviewtextView"
+        android:layout_width="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:textColor="@color/theme_blue"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/viewprofileimageView"
+        app:layout_constraintTop_toBottomOf="@+id/labelfirstnametextView" />
+
+
+    <TextView
+        android:id="@+id/lnameviewtextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/theme_blue"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@+id/labellastnametextView"
+        app:layout_constraintStart_toStartOf="@+id/labellastnametextView"
+        app:layout_constraintEnd_toEndOf="@+id/fnameviewtextView"/>
+
+    <TextView
+        android:id="@+id/phoneviewtextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/theme_blue"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/lnameviewtextView"
+        app:layout_constraintHorizontal_bias="0.796"
+        app:layout_constraintStart_toStartOf="@+id/labelphonetextView"
+        app:layout_constraintTop_toBottomOf="@+id/labelphonetextView" />
+
+    <TextView
+        android:id="@+id/genderviewtextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/theme_blue"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/dobviewtextView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dobviewtextView" />
+
+    <TextView
+        android:id="@+id/designationviewtextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/theme_blue"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/genderviewtextView"
+        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintStart_toStartOf="@+id/genderviewtextView"
+        app:layout_constraintTop_toBottomOf="@+id/labeldesignationtextView" />
+
+    <TextView
+        android:id="@+id/departmentviewtextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/theme_blue"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/genderviewtextView"
+        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintStart_toStartOf="@+id/genderviewtextView"
+        app:layout_constraintTop_toBottomOf="@+id/labeldepartmenttextView" />
+
+    <TextView
+        android:id="@+id/dobviewtextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/theme_blue"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/phoneviewtextView"
+        app:layout_constraintEnd_toEndOf="@+id/phoneviewtextView"
+        app:layout_constraintTop_toBottomOf="@+id/labeldobtextView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

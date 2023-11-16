@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.OfficeFragment"
+    android:id="@+id/office_fragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableLayout
+            android:id="@+id/table_heading_layout_office"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TableRow
+                android:id="@+id/table_row_office"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/date_textView_office"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_column="0"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_border_with_shadow"
+                    android:gravity="center"
+                    android:text="Date"
+                    android:textSize="13sp"
+                    android:textAlignment="center"
+                    android:textColor="#020202" />
+
+                <TextView
+                    android:id="@+id/timeIn_textView_office"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_column="1"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_border_with_shadow"
+                    android:gravity="center"
+                    android:text="Time In"
+                    android:textAlignment="center"
+                    android:textColor="#020202"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/timeOut_textView_office"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_column="2"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_border_with_shadow"
+                    android:gravity="center"
+                    android:text="Time Out"
+                    android:textAlignment="center"
+                    android:textColor="#020202"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/location_textView_office"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_column="3"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_border_with_shadow"
+                    android:gravity="center"
+                    android:text="Location"
+                    android:textAlignment="center"
+                    android:textColor="#020202"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/image_textView_office"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_column="4"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_border_with_shadow"
+                    android:gravity="center"
+                    android:text="Image"
+                    android:textAlignment="center"
+                    android:textColor="#020202"
+                    android:textSize="13sp"/>
+
+            </TableRow>
+        </TableLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/office_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/table_heading_layout_office">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
